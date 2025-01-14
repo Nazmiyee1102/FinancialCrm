@@ -7,15 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinancialCrm.Models
+namespace FinancialCrm.FinalCase.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class sysdiagrams
     {
-        public int UserId { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
