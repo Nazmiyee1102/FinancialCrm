@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinancialCrm.FinalCase.Models
+namespace FinancialCrm.Models
 {
     using System;
     using System.Data.Entity;

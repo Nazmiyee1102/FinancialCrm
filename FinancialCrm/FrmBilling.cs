@@ -108,5 +108,26 @@ namespace FinancialCrm
             frm.Show();
             this.Hide();
         }
+
+        private void btn_Dashboard_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frmDashboard = new FrmDashboard();
+            frmDashboard.Show();
+            this.Hide();
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void btn_Billing_Click(object sender, EventArgs e)
+        {
+            FrmBilling frmBilling = new FrmBilling();
+            frmBilling.Show();
+            this.Hide();
+        }
     }
 }

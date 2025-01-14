@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbl_LastTransfer = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -48,12 +48,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_Dashboard = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btn_BillForm = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Billing = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Banks = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -215,17 +215,18 @@
             this.button8.Text = "Ayarlar";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_Dashboard
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(19, 388);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(207, 40);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Dashboard";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Dashboard.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Dashboard.Location = new System.Drawing.Point(19, 388);
+            this.btn_Dashboard.Name = "btn_Dashboard";
+            this.btn_Dashboard.Size = new System.Drawing.Size(207, 40);
+            this.btn_Dashboard.TabIndex = 0;
+            this.btn_Dashboard.Text = "Dashboard";
+            this.btn_Dashboard.UseVisualStyleBackColor = true;
+            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click);
             // 
             // button6
             // 
@@ -251,17 +252,18 @@
             this.btn_BillForm.Text = "Giderler";
             this.btn_BillForm.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_Billing
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(19, 215);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 40);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Faturalar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Billing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Billing.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Billing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Billing.Location = new System.Drawing.Point(19, 215);
+            this.btn_Billing.Name = "btn_Billing";
+            this.btn_Billing.Size = new System.Drawing.Size(207, 40);
+            this.btn_Billing.TabIndex = 0;
+            this.btn_Billing.Text = "Faturalar";
+            this.btn_Billing.UseVisualStyleBackColor = true;
+            this.btn_Billing.Click += new System.EventHandler(this.btn_Billing_Click);
             // 
             // button3
             // 
@@ -275,17 +277,18 @@
             this.button3.Text = "Ödemeler";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Banks
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(19, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Bankalar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Banks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Banks.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Banks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Banks.Location = new System.Drawing.Point(19, 99);
+            this.btn_Banks.Name = "btn_Banks";
+            this.btn_Banks.Size = new System.Drawing.Size(207, 40);
+            this.btn_Banks.TabIndex = 0;
+            this.btn_Banks.Text = "Bankalar";
+            this.btn_Banks.UseVisualStyleBackColor = true;
+            this.btn_Banks.Click += new System.EventHandler(this.btn_Banks_Click);
             // 
             // button1
             // 
@@ -304,12 +307,12 @@
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel1.Controls.Add(this.btn_Logout);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btn_Dashboard);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btn_BillForm);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btn_Billing);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btn_Banks);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(1, 26);
             this.panel1.Name = "panel1";
@@ -324,16 +327,16 @@
             // 
             // chart2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart2.Legends.Add(legend5);
             this.chart2.Location = new System.Drawing.Point(632, 300);
             this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Faturalar";
-            this.chart2.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Faturalar";
+            this.chart2.Series.Add(series5);
             this.chart2.Size = new System.Drawing.Size(337, 299);
             this.chart2.TabIndex = 11;
             this.chart2.Text = "chart1";
@@ -382,16 +385,16 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(269, 300);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(337, 299);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -446,12 +449,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Logout;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btn_BillForm;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Billing;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Banks;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer timer1;

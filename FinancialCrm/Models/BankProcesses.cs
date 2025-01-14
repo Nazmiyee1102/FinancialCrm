@@ -7,16 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinancialCrm.FinalCase.Models
+namespace FinancialCrm.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Bills
+    public partial class BankProcesses
     {
-        public int BillId { get; set; }
-        public string BillTitle { get; set; }
-        public Nullable<decimal> BillAmount { get; set; }
-        public string BillPeriod { get; set; }
+        public int BankProcessId { get; set; }
+        public string Description { get; set; }
+        public Nullable<System.DateTime> ProcessDate { get; set; }
+        public string ProcessType { get; set; }
+        public Nullable<decimal> Amount { get; set; }
+        public Nullable<int> BankId { get; set; }
+    
+        public virtual Banks Banks { get; set; }
     }
 }

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_Logout = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_Dashboard = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Billing = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_BanksForm = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -62,12 +62,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.btn_Logout);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btn_Dashboard);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btn_Billing);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btn_BanksForm);
             this.panel1.Controls.Add(this.button1);
@@ -76,17 +76,18 @@
             this.panel1.Size = new System.Drawing.Size(248, 604);
             this.panel1.TabIndex = 1;
             // 
-            // button9
+            // btn_Logout
             // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(19, 506);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(207, 40);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Çıkış Yap";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Logout.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Logout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Logout.Location = new System.Drawing.Point(19, 506);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(207, 40);
+            this.btn_Logout.TabIndex = 0;
+            this.btn_Logout.Text = "Çıkış Yap";
+            this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // button8
             // 
@@ -100,17 +101,18 @@
             this.button8.Text = "Ayarlar";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_Dashboard
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(19, 388);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(207, 40);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Dashboard";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Dashboard.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Dashboard.Location = new System.Drawing.Point(19, 388);
+            this.btn_Dashboard.Name = "btn_Dashboard";
+            this.btn_Dashboard.Size = new System.Drawing.Size(207, 40);
+            this.btn_Dashboard.TabIndex = 0;
+            this.btn_Dashboard.Text = "Dashboard";
+            this.btn_Dashboard.UseVisualStyleBackColor = true;
+            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click);
             // 
             // button6
             // 
@@ -136,17 +138,18 @@
             this.button5.Text = "Giderler";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_Billing
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(19, 215);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 40);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Faturalar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Billing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Billing.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_Billing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Billing.Location = new System.Drawing.Point(19, 215);
+            this.btn_Billing.Name = "btn_Billing";
+            this.btn_Billing.Size = new System.Drawing.Size(207, 40);
+            this.btn_Billing.TabIndex = 0;
+            this.btn_Billing.Text = "Faturalar";
+            this.btn_Billing.UseVisualStyleBackColor = true;
+            this.btn_Billing.Click += new System.EventHandler(this.btn_Billing_Click);
             // 
             // button3
             // 
@@ -376,12 +379,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_Logout;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Billing;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_BanksForm;
         private System.Windows.Forms.Button button1;

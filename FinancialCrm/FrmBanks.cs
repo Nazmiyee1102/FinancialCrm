@@ -43,10 +43,6 @@ namespace FinancialCrm
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -62,6 +58,35 @@ namespace FinancialCrm
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
+            this.Hide();
+        }
+
+        private void btn_Banks_Click(object sender, EventArgs e)
+        {
+            FrmBanks frmBanks = new FrmBanks();
+            frmBanks.Show();
+            this.Hide();
+        }
+
+        private void btn_Billing_Click(object sender, EventArgs e)
+        {
+            FrmBilling frmBilling = new FrmBilling();
+            frmBilling.Show();
+            this.Hide();
+        }
+
+        private void btn_Dashboard_Click_1(object sender, EventArgs e)
+        {
+            FrmDashboard frmDashboard = new FrmDashboard();
+            frmDashboard.Show();
+            this.Hide();
+
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Hide();
         }
     }

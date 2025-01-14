@@ -7,19 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinancialCrm.FinalCase.Models
+namespace FinancialCrm.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Spendings
+    public partial class Bills
     {
-        public int SpendingId { get; set; }
-        public string SpendingTitle { get; set; }
-        public Nullable<decimal> SpendingAmount { get; set; }
-        public Nullable<System.DateTime> SpendingDate { get; set; }
-        public Nullable<int> CategoryId { get; set; }
-    
-        public virtual Categories Categories { get; set; }
+        public int BillId { get; set; }
+        public string BillTitle { get; set; }
+        public Nullable<decimal> BillAmount { get; set; }
+        public string BillPeriod { get; set; }
     }
 }
