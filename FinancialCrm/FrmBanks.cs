@@ -89,5 +89,60 @@ namespace FinancialCrm
             loginForm.Show();
             this.Hide();
         }
+
+        private void btn_Categories_Click(object sender, EventArgs e)
+        {
+            CategoryForm categoryForm = new CategoryForm();
+            categoryForm.Show();
+            this.Hide();
+        }
+
+        private void btn_Spending_Click(object sender, EventArgs e)
+        {
+            SpendingsForm spendingsForm = new SpendingsForm();
+            spendingsForm.Show();
+            this.Hide();
+        }
+
+        private void btn_Billing_Click_1(object sender, EventArgs e)
+        {
+            FrmBilling frmBilling = new FrmBilling();
+            frmBilling.Show();
+            this.Hide();
+        }
+
+        private void btn_BankProcesses_Click(object sender, EventArgs e)
+        {
+            BankProcessForm bankProcessForm = new BankProcessForm();
+            bankProcessForm.Show();
+            this.Hide();
+        }
+
+        private void btn_Dashboard_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frmDashboard = new FrmDashboard();
+            frmDashboard.Show();
+            this.Hide();
+        }
+
+        private void btn_Users_Click(object sender, EventArgs e)
+        {
+            UsersForm usersForm = new UsersForm();
+            usersForm.Show();
+            this.Hide();
+        }
+
+        private void btn_Logout_Click_1(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+        private void btn_Categories_Click_1(object sender, EventArgs e)
+        {
+            CategoryForm categoryForm = new CategoryForm();
+            categoryForm.Show();
+            this.Hide();
+        }
     }
 }
